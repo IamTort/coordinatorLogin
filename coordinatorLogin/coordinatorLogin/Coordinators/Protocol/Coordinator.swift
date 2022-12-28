@@ -4,7 +4,7 @@
 
 import UIKit
 
-/// протокол для координатора
+/// Протокол для координатора
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }

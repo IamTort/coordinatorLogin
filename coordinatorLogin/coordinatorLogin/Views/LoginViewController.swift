@@ -9,6 +9,7 @@ typealias StringHandler = (String) -> Void
 final class LoginViewController: UIViewController, Storyboarded {
 
     // MARK: - Constants
+    
     private enum Constants {
         static let mistakeString = "Ошибка"
         static let mistakeMessageString = "Нет пользователя с таким логином и паролем"
@@ -18,10 +19,12 @@ final class LoginViewController: UIViewController, Storyboarded {
     }
     
     // MARK: - Private IBOutlet
+    
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
     // MARK: - Public property
+    
     weak var coordinator: MainCoordinator?
     var toHelloUser: StringHandler?
     

@@ -8,21 +8,25 @@ import UIKit
 final class RegistrationViewController: UIViewController, Storyboarded {
     
     // MARK: - Constants
+    
     private enum Constants {
         static let mistakeString = "Ошибка"
         static let mistakeMessageString = "Все поля должны быть заполнены!"
         static let keyString = "isLogin"
     }
+    
     // MARK: - Private IBOutlet
     
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
     // MARK: - Public property
+    
     weak var coordinator: RegistrationCoordinator?
     var toHelloUser: StringHandler?
     
     // MARK: - Private IBAction
+    
     @IBAction private func registerAction(_ sender: Any) {
         guard
             let login = loginTextField.text,

@@ -15,6 +15,7 @@ final class MainPageViewController: UIViewController, Storyboarded {
     }
     
     // MARK: - Private IBOutlet
+    
     @IBOutlet private weak var descriptionLabel: UILabel! {
         didSet {
             descriptionLabel.text = "\(Constants.helloString) \(nameString)"
@@ -22,10 +23,12 @@ final class MainPageViewController: UIViewController, Storyboarded {
     }
     
     // MARK: - Public property
+    
     weak var coordinator: MainCoordinator?
     var nameString = String()
     
     // MARK: - Private IBAction
+    
     @IBAction private func logoutAction(_ sender: Any) {
         guard let coordinator = coordinator else {
             return

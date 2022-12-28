@@ -8,12 +8,14 @@ import UIKit
 final class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     
     // MARK: - Constants
+    
     private enum Constants {
         static let keyString = "isLogin"
         static let loginString = "q"
     }
     
     // MARK: - Public property
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
