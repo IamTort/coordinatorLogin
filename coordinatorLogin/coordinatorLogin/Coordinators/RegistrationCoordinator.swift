@@ -1,15 +1,14 @@
-//
 //  RegisterCoordinator.swift
 //  coordinatorLogin
-//
 //  Created by angelina on 28.12.2022.
-//
 
 import UIKit
+
 /// Координатор экрана регистрации
 final class RegistrationCoordinator: Coordinator {
     
     // MARK: - Public property
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     weak var parentCoordinator: MainCoordinator?

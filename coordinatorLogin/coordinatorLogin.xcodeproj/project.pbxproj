@@ -19,6 +19,7 @@
 		FA8C4341295C789B00E4C508 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C4340295C789B00E4C508 /* MainCoordinator.swift */; };
 		FA8C4343295C7B4B00E4C508 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C4342295C7B4B00E4C508 /* RegistrationCoordinator.swift */; };
 		FA8C4345295C815900E4C508 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C4344295C815900E4C508 /* UIViewController+Extension.swift */; };
+		FA8C4347295CA74D00E4C508 /* Storyboarded+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C4346295CA74D00E4C508 /* Storyboarded+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA8C4340295C789B00E4C508 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FA8C4342295C7B4B00E4C508 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		FA8C4344295C815900E4C508 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FA8C4346295CA74D00E4C508 /* Storyboarded+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboarded+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				FA8C432C295C75F300E4C508 /* LaunchScreen.storyboard */,
 				FA8C432F295C75F300E4C508 /* Info.plist */,
 				FA8C4344295C815900E4C508 /* UIViewController+Extension.swift */,
+				FA8C4346295CA74D00E4C508 /* Storyboarded+Extension.swift */,
 			);
 			path = coordinatorLogin;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				FA8C4345295C815900E4C508 /* UIViewController+Extension.swift in Sources */,
 				FA8C4338295C779B00E4C508 /* MainPageViewController.swift in Sources */,
 				FA8C4341295C789B00E4C508 /* MainCoordinator.swift in Sources */,
+				FA8C4347295CA74D00E4C508 /* Storyboarded+Extension.swift in Sources */,
 				FA8C4336295C777100E4C508 /* RegistrationViewController.swift in Sources */,
 				FA8C433D295C77F600E4C508 /* Coordinator.swift in Sources */,
 				FA8C4326295C75F100E4C508 /* LoginViewController.swift in Sources */,

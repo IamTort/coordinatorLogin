@@ -30,7 +30,6 @@ final class MainPageViewController: UIViewController, Storyboarded {
         guard let coordinator = coordinator else {
             return
         }
-        
         UserDefaults.standard.set(false, forKey: Constants.keyString)
         coordinator.logout()
     }
