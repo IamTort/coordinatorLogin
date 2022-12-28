@@ -7,10 +7,13 @@ import UIKit
 /// Координатор экрана регистрации
 final class RegistrationCoordinator: Coordinator {
     
+    // MARK: - Public visual components
+    
+    var navigationController: UINavigationController
+    
     // MARK: - Public property
     
     var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
     weak var parentCoordinator: MainCoordinator?
     
     // MARK: - Initializers

@@ -2,7 +2,7 @@
 //  coordinatorLogin
 //  Created by angelina on 28.12.2022.
 
-import UIKit
+import Foundation
 
 /// Протокол для создания контроллера
 protocol Storyboarded {

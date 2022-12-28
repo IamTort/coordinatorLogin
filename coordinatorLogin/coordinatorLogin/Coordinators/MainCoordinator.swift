@@ -5,7 +5,7 @@
 import UIKit
 
 /// Главный координатор
-final class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
+final class MainCoordinator: NSObject, Coordinator {
     
     // MARK: - Constants
     
@@ -28,7 +28,6 @@ final class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelega
     // MARK: - Public methods
     
     func start() {
-        navigationController.delegate = self
         if UserDefaults.standard.bool(forKey: Constants.keyString) {
             login(name: Constants.loginString)
         } else {
@@ -47,18 +46,6 @@ final class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelega
                 childCoordinators.remove(at: index)
                 break
             }
-        }
-    }
-    
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
-            return
-        }
-        if navigationController.viewControllers.contains(fromViewController) {
-            return
-        }
-        if let registrationViewController = fromViewController as? RegistrationViewController {
-            childDidFinish(registrationViewController.coordinator)
         }
     }
     
